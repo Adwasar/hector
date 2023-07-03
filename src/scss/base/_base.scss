@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

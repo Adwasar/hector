@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+// .text {
+// }
+
+._container {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+}
