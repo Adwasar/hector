@@ -13,4 +13,12 @@
 
 body {
   background-color: $bg-color;
+  font-size: 1.6rem;
+  color: $text-color;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
