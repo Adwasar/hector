@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+  .header__left-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
