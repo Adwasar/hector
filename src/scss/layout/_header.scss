@@ -3,11 +3,36 @@
 // -----------------------------------------------------------------------------
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 152px;
 
-  .header__left-nav {
+  .header__left-list {
     display: flex;
     justify-content: space-between;
+    width: 735px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+
+    img {
+      margin-left: 6px;
+    }
+  }
+
+  .header__logo {
+    position: absolute;
+    display: block;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header__right-list {
+    display: flex;
+    justify-content: space-between;
+    width: 322px;
   }
 }
