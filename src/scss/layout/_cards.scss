@@ -27,6 +27,9 @@
 
   .cards__items {
     margin-top: 104px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px 61px;
   }
 
   .card-item {
