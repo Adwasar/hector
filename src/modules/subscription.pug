@@ -4,6 +4,7 @@ section.subscription
     .subscription__social-medias
       img(src="./assets/icon/big-viber.svg", alt="Viber").subscription__viber
       img(src="./assets/icon/big-tg.svg", alt="Telegram").subscription__telegram
-    form
-      input(type="text" pattern="[+]{0,1}[0-9]{11}" placeholder="Введите номер телефона")
-      input(type="submit" value="Подписаться")
+    form.subscription__form
+      img(src="./assets/icon/phone.svg").subscription__phone-icon
+      input(type="tel" placeholder="+38 (___) ___-___-__").subscription__input
+      input(type="submit" value="ПОДПИСАТЬСЯ").subscription__submit-btn.button.button_black 
