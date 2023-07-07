@@ -11,10 +11,10 @@
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer', 'layout/slider', 'layout/advertising.scss',
-  'layout/cards.scss';
+  'layout/cards.scss', 'layout/_news-and-reviews.scss';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button', 'components/tabs';
 
 // 6. Page-specific styles
 @import 'pages/home';
