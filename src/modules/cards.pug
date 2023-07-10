@@ -1,0 +1,29 @@
+section.cards
+  .cards__container._container
+    .tabs
+      .tabs__element.tabs__element_active Новинки
+      .tabs__element ТОП продаж
+      .tabs__element Скидки
+  
+    .cards__items
+    
+      - for (i = 0; i < 8; i++) 
+        .card-item
+          .card-item__marker 
+            spam.card-item__marker-text NEW
+          img(src="./assets/img/card-look.png").card-item__image
+          .card-item__rating-and-sizes
+            .cart-item__rating
+              span.cart-item__star
+              span.cart-item__star
+              span.cart-item__star
+              span.cart-item__star
+              span.cart-item__star.cart-item__star_active
+            .cart-item__sizes
+              span.cart-item__size-element S
+              span.cart-item__size-element.cart-item__size-element_active M
+              span.cart-item__size-element L
+          p.card-item__description Футболка мужская Exclusive 22032 
+          span.card-item__prize 245₴
+
+    button.button.cards__button ПОСМОТРЕТЬ КАТАЛОГ

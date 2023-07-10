@@ -1,0 +1,90 @@
+.cards__container {
+  padding: 98px 0 92px;
+
+  .cards__items {
+    margin-top: 104px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px 61px;
+  }
+
+  .card-item {
+    position: relative;
+    width: 376px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .card-item__marker {
+    position: absolute;
+    display: block;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    width: 88px;
+    height: 88px;
+
+    .card-item__marker-text {
+      display: block;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      transform: rotate(270deg);
+      margin-left: 63px;
+      margin-top: 44px;
+    }
+  }
+
+  .card-item__rating-and-sizes {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cart-item__rating {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+
+      .cart-item__star {
+        background: url('../assets/icon/star-black.svg');
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+      }
+
+      .cart-item__star_active {
+        background: url('../assets/icon/star-empty.svg');
+      }
+    }
+
+    .cart-item__sizes {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 2.2rem;
+      color: #cecece;
+    }
+
+    .cart-item__size-element_active {
+      color: $text-color;
+    }
+  }
+
+  .card-item__description {
+    margin-top: 20px;
+  }
+
+  .card-item__prize {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .cards__button {
+    display: block;
+    margin: 70px auto 0;
+  }
+}

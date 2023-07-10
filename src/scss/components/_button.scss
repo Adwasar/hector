@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.button {
+  padding: 26px 88px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $text-color;
+  border: 1px solid $btn-border-color;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  letter-spacing: 1.4px;
+}
+
+.button_white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button_black {
+  background-color: black;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 22px;
+  font-weight: 700;
+}

@@ -1,0 +1,51 @@
+.subscription__container {
+  padding: 68px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .subscription__title {
+    max-width: 580px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 2.2px;
+  }
+
+  .subscription__social-medias {
+    display: flex;
+    align-items: center;
+
+    .subscription__telegram {
+      margin-left: 28px;
+    }
+  }
+
+  .subscription__form {
+    position: relative;
+    display: flex;
+    height: 72px;
+    box-sizing: border-box;
+
+    .subscription__phone-icon {
+      position: absolute;
+      top: 50%;
+      left: 28px;
+      transform: translateY(-50%);
+    }
+
+    .subscription__input {
+      padding-left: 80px;
+      height: 100%;
+      width: 453px;
+      border: #bfbfbf 2px solid;
+      color: #878787;
+      font-size: 2.4rem;
+      box-sizing: border-box;
+    }
+
+    .subscription__submit-btn {
+      height: 100%;
+    }
+  }
+}
