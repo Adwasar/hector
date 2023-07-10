@@ -1,13 +1,18 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
 .header__container {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 152px;
+  z-index: 1000;
+
+  .head__burger {
+    display: none;
+
+    @media (max-width: 1300px) {
+      display: block;
+    }
+  }
 
   .header__left-list {
     display: flex;
@@ -20,6 +25,10 @@
     img {
       margin-left: 6px;
     }
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
   }
 
   .header__logo {
@@ -28,11 +37,26 @@
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 1720px) {
+      position: static;
+      transform: none;
+    }
+
+    @media (max-width: 620px) {
+      position: static;
+      transform: none;
+      width: 90px;
+    }
   }
 
   .header__right-list {
     display: flex;
     justify-content: space-between;
     width: 322px;
+
+    @media (max-width: 620px) {
+      width: 180px;
+    }
   }
 }
