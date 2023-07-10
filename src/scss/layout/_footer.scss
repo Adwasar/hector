@@ -1,3 +1,115 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer__upper-floor {
+  height: 516px;
+  background-color: #636363;
+  color: #fff;
+
+  .footer__upper-floor-container {
+    height: 516px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__about-company-amd-for-customers {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer__title {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+
+    .footer__for-customers {
+      margin-left: 140px;
+    }
+
+    .footer__list-about-company {
+      margin-top: 72px;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 20px 38px;
+      letter-spacing: 0.6px;
+    }
+
+    .footer__list-for-customers {
+      margin-top: 72px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 38px;
+      letter-spacing: 0.6px;
+    }
+
+    .footer__contacts {
+      width: 320px;
+      font-size: 3rem;
+      letter-spacing: 2px;
+
+      .footer__phone-num {
+        margin-top: 15px;
+      }
+    }
+
+    .footer__messengers-and-social-medias {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer__messengers-list,
+      .footer__social-medias-list {
+        display: flex;
+      }
+
+      .footer__messengers-list-item,
+      .footer__social-medias-list-item {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.footer__lower-floor {
+  background-color: #333;
+  color: rgba($color: #fff, $alpha: 0.4);
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+
+  .footer__lower-floor-container {
+    display: flex;
+    height: 106px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__lower-floor-content {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-right: 30px;
+
+        a {
+          color: rgba($color: #fff, $alpha: 0.4);
+          text-decoration: none;
+          margin-right: 10px;
+          border-bottom: dashed 1px;
+        }
+
+        span {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .footer__design-by {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 15px;
+    }
+  }
+}

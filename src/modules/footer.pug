@@ -2,25 +2,26 @@ footer.footer
   .footer__upper-floor
     .footer__upper-floor-container._container
       img(src="./assets/icon/logo-white.svg", alt="Logo").footer__logo
-      nav.footer__about-company
-        h3.footer__title О КОМПАНИИ
-        ul.footer__list
-          li.footer__list-item Доставка и оплата одежды
-          li.footer__list-item Опт
-          li.footer__list-item Политика конфиденциальности
-          li.footer__list-item О Нас
-      nav.footer__for-customers
-        h3.footer__title ЗАКАЗЧИКАМ
-        ul.footer__list
-          li.footer__list-item Личный кабинет   
-          li.footer__list-item Возврат товара 
-          li.footer__list-item История заказов
-          li.footer__list-item Обратная связь
-          li.footer__list-item Закладки
+      .footer__about-company-amd-for-customers
+        nav.footer__about-company
+          h3.footer__title О КОМПАНИИ
+          ul.footer__list-about-company
+            li.footer__list-item Доставка и оплата одежды
+            li.footer__list-item Опт
+            li.footer__list-item Политика конфиденциальности
+            li.footer__list-item О Нас
+        nav.footer__for-customers
+          h3.footer__title ЗАКАЗЧИКАМ
+          ul.footer__list-for-customers
+            li.footer__list-item Личный кабинет   
+            li.footer__list-item Возврат товара 
+            li.footer__list-item История заказов
+            li.footer__list-item Обратная связь
+            li.footer__list-item Закладки
       .footer__contacts 
-        span.footer__phone-num +38 068 346 04 75
-        span.footer__phone-num +38 066 400 38 14
-        .footer__messengers-amd-social-medias
+        p.footer__phone-num +38 068 346 04 75
+        p.footer__phone-num +38 066 400 38 14
+        .footer__messengers-and-social-medias
           nav.footer__messengers
             ul.footer__messengers-list
               li.footer__messengers-list-item
@@ -51,7 +52,7 @@ footer.footer
           p © 2020 HECTOR Все права защищены
           p 
             a(href="#")  Политика конфиденциальности
-            |
+            span |
             a(href="#")  Условия продажи
       .footer__design-by
         span Design by
