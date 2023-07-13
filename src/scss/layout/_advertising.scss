@@ -5,7 +5,13 @@
 .advertising__container {
   display: flex;
   justify-content: space-between;
-  padding: 29px 0 36px;
+  padding: 29px 20px 36px;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: 1680px) {
+    justify-content: space-around;
+  }
 
   .advertising-card {
     display: flex;
@@ -16,9 +22,21 @@
     overflow: hidden;
     background-color: $bg-color;
 
+    @media (max-width: 1700px) {
+      padding: 15px 15px 0px;
+    }
+
     .article__img {
       position: relative;
       left: -20px;
+      width: 100%;
+      object-fit: cover;
+
+      @media (max-width: 600px) {
+        padding-right: 15px;
+        left: 0;
+        width: 140px;
+      }
     }
 
     .advertising-card__info {
@@ -28,6 +46,12 @@
         font-weight: 700;
         line-height: 36px;
         letter-spacing: 1px;
+
+        @media (max-width: 600px) {
+          margin-top: 0;
+          line-height: 32px;
+          letter-spacing: 0;
+        }
       }
 
       .advertising-card__text {
