@@ -3,12 +3,19 @@
 }
 
 .news-and-reviews__container {
-  padding: 83px 0 78px;
+  padding-top: 83px;
+  padding-bottom: 78px;
 
   .news-and-reviews__blocks {
     margin-top: 63px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 1700px) {
+      flex-direction: column;
+    }
 
     .news-block {
       padding: 108px 120px;
@@ -22,6 +29,19 @@
       width: 810px;
       height: 450px;
       box-sizing: border-box;
+
+      @media (max-width: 900px) {
+        padding: 54px 60px;
+        width: 700px;
+      }
+
+      @media (max-width: 740px) {
+        width: 500px;
+      }
+
+      @media (max-width: 540px) {
+        width: 330px;
+      }
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.8);
@@ -49,6 +69,7 @@
 
     .news-block__wrapper {
       background: #e9e8e4 url('../assets/img/blue-look.png') no-repeat center;
+      width: min-content;
     }
   }
 
