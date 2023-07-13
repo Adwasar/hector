@@ -6,16 +6,42 @@
   background-repeat: no-repeat;
   color: #fff;
 
+  @media (max-width: 1000px) {
+    padding-top: 40px;
+    height: 750px;
+  }
+
+  @media (max-width: 380px) {
+    padding-top: 40px;
+    height: 790px;
+  }
+
   .footer__upper-floor-container {
     height: 516px;
     box-sizing: border-box;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 40px;
+    }
 
     .footer__about-company-amd-for-customers {
       display: flex;
       justify-content: space-between;
+      gap: 140px;
+
+      @media (max-width: 1700px) {
+        gap: 70px;
+      }
+
+      @media (max-width: 1380px) {
+        flex-direction: column;
+        gap: 40px;
+      }
     }
 
     .footer__title {
@@ -24,16 +50,16 @@
       letter-spacing: 0.8px;
     }
 
-    .footer__for-customers {
-      margin-left: 140px;
-    }
-
     .footer__list-about-company {
       margin-top: 72px;
       display: grid;
       grid-template-columns: 4fr 1fr;
       gap: 20px 38px;
       letter-spacing: 0.6px;
+
+      @media (max-width: 1380px) {
+        margin-top: 20px;
+      }
     }
 
     .footer__list-for-customers {
@@ -42,6 +68,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px 38px;
       letter-spacing: 0.6px;
+
+      @media (max-width: 1380px) {
+        margin-top: 20px;
+      }
     }
 
     .footer__contacts {
@@ -86,9 +116,21 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 700px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 190px;
+      flex-direction: column;
+    }
+
     .footer__lower-floor-content {
       display: flex;
       align-items: center;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 40px;
+      }
 
       p {
         margin-right: 30px;
