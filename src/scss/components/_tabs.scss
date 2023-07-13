@@ -30,17 +30,3 @@
     border-bottom: 6px solid black;
   }
 }
-
-.cards__items {
-  margin-top: 104px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 94px 61px;
-}
-
-.card-item {
-  position: relative;
-  width: 376px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
