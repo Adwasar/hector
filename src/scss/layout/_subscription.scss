@@ -1,8 +1,14 @@
 .subscription__container {
-  padding: 68px 0;
+  padding-top: 68px;
+  padding-bottom: 68px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1700px) {
+    flex-direction: column;
+    gap: 40px 0;
+  }
 
   .subscription__title {
     max-width: 580px;
@@ -27,9 +33,15 @@
     height: 72px;
     box-sizing: border-box;
 
+    @media (max-width: 860px) {
+      flex-direction: column;
+      gap: 20px;
+      height: auto;
+    }
+
     .subscription__phone-icon {
       position: absolute;
-      top: 50%;
+      top: 36px;
       left: 28px;
       transform: translateY(-50%);
     }
@@ -42,6 +54,12 @@
       color: #878787;
       font-size: 2.4rem;
       box-sizing: border-box;
+
+      @media (max-width: 860px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+      }
     }
 
     .subscription__submit-btn {
